@@ -1,3 +1,38 @@
-body {
-    background: url(img/fondo.jpg)
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+.container{
+    background: url(./img/fondo2.jpg);
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.principal img{
+    width: 55%;
+    height: auto;
+   
+}
+
+.principal button{
+    width: 20%;
+    padding: 10px;
+    background:yellow;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
