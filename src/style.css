@@ -36,3 +36,10 @@
     border-radius: 10px;
     font-size: 18px;
     cursor: pointer;
+
+}
+#vacio{
+    width: 50%;
+    height: 50%;
+    background: red;
+}
