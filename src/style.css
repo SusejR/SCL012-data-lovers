@@ -8,8 +8,12 @@ nav , footer{
     background: #F39422;
     display: flex;
     justify-content: flex-end;
+    padding: 3%;
 }
-
+.menu {
+   
+    padding: 5%;
+}
 
 .imgLogo{
     width: 150px;
