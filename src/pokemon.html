@@ -11,18 +11,19 @@
 </head>
 
 <body>
-  <img src="img/logotipo2solo.svg" class="imgLogo" alt="">
+
   <nav>
+    <img src="img/logotipo2solo.svg" class="imgLogo" alt="">
     <div class="navBotones">
-      <div>inicio</div>
-      <div>pokemones</div>
+      <div><p> Inicio</p></div>
+      <div class="active"><p> Pokemón</p></div>
       <div id='select'>
-        <select name="tiposPokemones" id="types">
+        <select name="tiposPokemon" id="types" class="selector">
           <option value="tiposdePokemon">Tipos de Pokemón</option>
           <option value="Fire">Fuego</option>
           <option value="Ice">Hielo</option>
           <option value="Flying">Volador</option>
-          <option value="Psychic">Psiquico</option>
+          <option value="Psychic">Psíquico</option>
           <option value="Water">Agua</option>
           <option value="Ground">Tierra</option>
           <option value="Rock">Roca</option>
@@ -30,7 +31,7 @@
           <option value="Fighting">Lucha</option>
           <option value="Poison">Veneno</option>
           <option value="Bug">Bicho</option>
-          <option value="Electric">Electrico</option>
+          <option value="Electric">Eléctrico</option>
           <option value="Ghost">Fantasma</option>
           <option value="Normal">Normal</option>
           <option value="Dragon">Dragón</option>
@@ -38,11 +39,17 @@
       </div>
     </div>
   </nav>
-  <div id='pokemones'> 
-    <h1>Todos los pokemones</h1>
+
+  <div class="container">
+    <div class="seccion">
+      <h1>Todos los pokemón</h1>
+      <div id='pokemones' class="pokemones">
+      </div>
+    </div>
   </div>
+
   <footer></footer>
-  <a href=""></a>
+
   <div id="root"></div>
   <script type="module" src="main.js"></script>
 </body>

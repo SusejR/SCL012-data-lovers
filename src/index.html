@@ -10,10 +10,35 @@
   <link rel="icon" href="img/favicon.ico" />
 </head>
 
-<body>
-  <img src="img/logotipo2solo.svg" class="imgLogo" alt="">
-  <nav class='menu'>
-  </nav>
+<body class="back">
+ 
+    <nav> 
+        <img src="img/logotipo2solo.svg" class="imgLogo" alt="">
+        <div class="navBotones">
+            <div class="active"><p> Inicio</p></div>
+            <div ><p> Pokemón</p></div>
+          <div id='select'>
+            <select name="tiposPokemon" id="types" class="selector">
+              <option value="tiposdePokemon">Tipos de Pokemón</option>
+              <option value="Fire">Fuego</option>
+              <option value="Ice">Hielo</option>
+              <option value="Flying">Volador</option>
+              <option value="Psychic">Psíquico</option>
+              <option value="Water">Agua</option>
+              <option value="Ground">Tierra</option>
+              <option value="Rock">Roca</option>
+              <option value="Grass">Planta</option>
+              <option value="Fighting">Lucha</option>
+              <option value="Poison">Veneno</option>
+              <option value="Bug">Bicho</option>
+              <option value="Electric">Eléctrico</option>
+              <option value="Ghost">Fantasma</option>
+              <option value="Normal">Normal</option>
+              <option value="Dragon">Dragón</option>
+            </select>
+          </div>
+        </div>
+      </nav>
   <div class="container" id="cont">
     <section class="principal">
       <img src="img/logotipo2.svg">
@@ -26,9 +51,10 @@
         <a href='pokemon.html'>Ingresar</a>
       </div>
     </section>
+   
   </div>
-
-  <footer></footer>
+ <footer></footer>
+  
   <a href=""></a>
   <div id="root"></div>
 

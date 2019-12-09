@@ -4,32 +4,57 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.back{
+    background: url(./img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
 nav , footer{
     background: #F39422;
     display: flex;
-    justify-content: flex-end;
-    padding: 3%;
-}
-.menu {
-   
-    padding: 5%;
+    justify-content: space-between;
+    padding: 0 3%;
 }
 
+
 .imgLogo{
-    width: 150px;
-    position: absolute;
+    width: 80px;
+    
 }
 
 .navBotones{
 display: flex;
 align-items: center;
-justify-content: center;
-text-align: center;
+
+}
+nav p, .select{
+    display: block;
+    margin: 15px 10px 15px 30px;
+    width: 150px;
+    text-align: center;
 }
 
+.selector{
+    background: transparent;
+    border: none;
+    width: 150px;
+    height: 30px;
+    /* border-radius: 10px; */
+}
+
+.selector:focus{
+    background:#FFCE05;
+    border: none;
+    border-radius: 10px;
+    outline: green;
+}
+
+
 .navBotones div{
-    padding: 0px 10px 0px 30px;
-    color: #344596;
+    
+    color:#ffffff;
     font-size: 2em;
     transition: all .3s ease;
 }
@@ -38,15 +63,26 @@ text-align: center;
     cursor: pointer;
     
 }
+.active{
+    background:#FFCE05 ;
+}
 
 .container{
-    background: url(./img/background.png);
+    /* background: url(./img/background.png); */
     min-height: 100vh;
-    width: 100%;
-    background-size: cover;
+    width: 80%;
+    margin: auto;
+    /* background-size: cover;
     background-repeat: no-repeat;
-    
+     */
+     /* display: flex; */
+     /* flex-direction: column; */
 }
+
+/* .container:last-child{
+    justify-content: flex-end;
+    align-items: flex-end;
+} */
 
 .principal{
     display: flex;
@@ -94,8 +130,65 @@ text-align: center;
     background: rgb(255, 204, 1);
 }
 
+.pokemones{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.cajaPokemon{
+    width: 18%;
+    height: auto;
+    background: #FFEDA5;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    position: relative;
+    
+}
+
+span{
+    background: green;
+    width: auto;
+    height: 200px;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: -100px;
+    z-index: 100;
+}
+
+.cajaPokemon:hover span{
+    display: block;
+}
+
+.descripcion{
+    margin: 25px 20px ;
+
+}
+
+.fotos{
+    display: block;
+    margin: auto;
+}
+
+.nombres{
+    font-size: 20px;
+    text-align: center;
+}
+
+.cajaPokemon p{
+    text-align: left;
+    padding: 3px 0 0 8px;
+    
+   
+}
+
 footer{
     height: 50px;
+    /* width: 100%; */
+    /* align-self: flex-end; */
+    
 }
 
 #con{
@@ -103,6 +196,7 @@ footer{
     height: 40px;
     background: red;
 }
+
 
 /* @media (max-width: 600px) {
     .container{
