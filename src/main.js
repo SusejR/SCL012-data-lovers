@@ -1,34 +1,26 @@
-
 import POKEMON from './data/pokemon/pokemon.js';
 
-// console.log(POKEMON);
-// console.log(POKEMON[0].type);
+let poke = document.getElementById("pokemones");
 
-// let con = document.getElementById("con")
-// cont.innerHTML = POKEMON[0].next_evolution[0].name;
+for(let pok of POKEMON){
+  
 
-
-// for (const poke of POKEMON) {
-//   // console.log(poke.name)
-//   if () {
-
-//}
-
-
-for (const poke of POKEMON) {
-  console.log(poke.name)
-  if (poke.candy_count > 25) {
-    con.innerHTML += `
-    <p>${poke.name}</p>
-    <img src= "${poke.img}">
+  poke.innerHTML += `
+    <div class="cajaPokemon" id="cajaPokemon">      
+    <img class="fotos" src="${pok.img}">
+    <div class="descripcion">
+    <p class="nombres">${pok.name}</p><br>
+    <p> Tipo: ${pok.type}</p>
+    <p> Altura: ${pok.height}</p>
+    <p> Peso: ${pok.weight}</p>
+    </div>
   `
-  }
 }
 
-// for (let i=0; i< POKEMON.length; i++){
-//     // console.log(POKEMON[i].name);
-//     con.innerHTML += `
-//     <p>${POKEMON[i].name}</p>
-//     <img src= "${POKEMON[i].img}">
-//     `
+
+// const pokemones = document.getElementById('pokemones');
+// for (let i = 0; i < POKEMON.length; i+=1) {
+//     pokemones.innerHTML +=`
+//     <img src="${POKEMON[i].img}">
+//     <p>${POKEMON[i].name}</p>`;
 // }
