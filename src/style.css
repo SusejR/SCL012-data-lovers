@@ -11,6 +11,7 @@
     background-repeat: no-repeat;
     
 }
+
 nav , footer{
     background: #F39422;
     display: flex;
@@ -18,42 +19,44 @@ nav , footer{
     padding: 0 3%;
 }
 
-
 .imgLogo{
     width: 80px;
-    
 }
 
 .navBotones{
 display: flex;
 align-items: center;
-
 }
+
 nav p, .select{
     display: block;
-    margin: 15px 10px 15px 30px;
+    margin: 15px 15px 15px 30px;
+    padding: 5px 0 5px 0;
     width: 150px;
     text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
 }
 
 .selector{
     background: transparent;
     border: none;
     width: 150px;
-    height: 30px;
+    height: 65px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color:#ffffff;
     /* border-radius: 10px; */
 }
 
 .selector:focus{
     background:#FFCE05;
     border: none;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     outline: green;
 }
 
-
 .navBotones div{
-    
     color:#ffffff;
     font-size: 2em;
     transition: all .3s ease;
@@ -63,6 +66,7 @@ nav p, .select{
     cursor: pointer;
     
 }
+
 .active{
     background:#FFCE05 ;
 }
@@ -91,7 +95,6 @@ nav p, .select{
     flex-wrap: wrap;
 }
 
-
 .principal img {  
     width: 250px;
     height: 200px;
@@ -101,7 +104,8 @@ nav p, .select{
 
 .principal div{
     width: 30%;
-    margin: 10% 5% 0;
+    padding: 0% 0% 0% 13%;
+    margin: 8% 0% 0;
     font-size: 1.3em;
     display: flex;
     flex-direction: column;
@@ -109,32 +113,39 @@ nav p, .select{
 }
 .texto{
     color:#344596;
-
+    margin: 0% 0 5% 10%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .principal div a{
     text-align: center;
     width: 150px;
     padding: 10px 20px;
-    background: #F39422;
+    background:#F39422;
     border-radius: 10px;
-    border: solid 2px #344596;
     text-decoration: none;
-    color: #344596;
+    color: #ffffff;
     transition: all .2s ease;
-    margin-left: 15%;
-    
+    margin: 8% 0 0 10%;
+    font-family: 'Raleway', sans-serif;
 }
 
 .principal div a:hover{
     background: rgb(255, 204, 1);
 }
 
+h1{
+    text-align: center;
+    color: #F39422;
+    margin: 20px 0 20px 0;
+    font-family: 'Raleway', sans-serif, bold;
+}
+
 .pokemones{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    
+    font-family: 'Montserrat', sans-serif;
 }
 
 .cajaPokemon{
@@ -143,8 +154,7 @@ nav p, .select{
     background: #FFEDA5;
     border-radius: 15px;
     margin-bottom: 20px;
-    position: relative;
-    
+    position: relative; 
 }
 
 span{
@@ -164,7 +174,6 @@ span{
 
 .descripcion{
     margin: 25px 20px ;
-
 }
 
 .fotos{
@@ -175,20 +184,18 @@ span{
 .nombres{
     font-size: 20px;
     text-align: center;
+    
 }
 
 .cajaPokemon p{
     text-align: left;
     padding: 3px 0 0 8px;
-    
-   
 }
 
 footer{
     height: 50px;
     /* width: 100%; */
     /* align-self: flex-end; */
-    
 }
 
 #con{

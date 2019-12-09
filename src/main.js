@@ -1,10 +1,7 @@
 import POKEMON from './data/pokemon/pokemon.js';
 
 let poke = document.getElementById("pokemones");
-
 for(let pok of POKEMON){
-  
-
   poke.innerHTML += `
     <div class="cajaPokemon" id="cajaPokemon">      
     <img class="fotos" src="${pok.img}">
@@ -14,7 +11,7 @@ for(let pok of POKEMON){
     <p> Altura: ${pok.height}</p>
     <p> Peso: ${pok.weight}</p>
     </div>
-  `
+    `
 }
 
 
