@@ -1,6 +1,7 @@
 import POKEMON from './data/pokemon/pokemon.js';
 
 let poke = document.getElementById("pokemones");
+
 const tipos = document.getElementById("types");
 
 tipos.onchange = () => {
@@ -23,8 +24,17 @@ const showCards = (data) => {
       <p> Tipo: ${pok.type}</p>
       <p> Altura: ${pok.height}</p>
       <p> Peso: ${pok.weight}</p>
-      </div>
-       `
+      
+  <span>
+        <p class="nombres"> Características </p><br>
+        <p> Caramelos para evolucionar: ${pok.candy_count}</p>
+        <p> Huevo: ${pok.egg}</p>
+        <p> Posibilidad de aparición: ${pok.spawn_chance}</p>
+        <p> Tiempo de generación: ${pok.spawn_time}</p>
+        <p> Debilidades: ${pok.weaknesses}</p>
+      </span>
+   </div>
+`
   });
 }
 
@@ -39,4 +49,5 @@ const filterPokemon = (data, type) => {
 }
 
 showCards(POKEMON);
+
 

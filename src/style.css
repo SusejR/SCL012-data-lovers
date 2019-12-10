@@ -45,21 +45,20 @@ nav p, .select{
     height: 65px;
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
-    color:#ffffff;
-    /* border-radius: 10px; */
+    color:#000000;
 }
 
 .selector:focus{
     background:#FFCE05;
     border: none;
-    /* border-radius: 10px; */
     outline: green;
 }
 
 .navBotones div{
-    color:#ffffff;
+    color:#000000;
     font-size: 2em;
     transition: all .3s ease;
+    font-family: 'Raleway', sans-serif, bold;
 }
 .navBotones div:hover{
     background: #FFCE05;
@@ -72,7 +71,6 @@ nav p, .select{
 }
 
 .container{
-    /* background: url(./img/background.png); */
     min-height: 100vh;
     width: 80%;
     margin: auto;
@@ -82,11 +80,6 @@ nav p, .select{
      /* display: flex; */
      /* flex-direction: column; */
 }
-
-/* .container:last-child{
-    justify-content: flex-end;
-    align-items: flex-end;
-} */
 
 .principal{
     display: flex;
@@ -112,7 +105,7 @@ nav p, .select{
     
 }
 .texto{
-    color:#344596;
+    color:#000000;
     margin: 0% 0 5% 10%;
     font-family: 'Montserrat', sans-serif;
 }
@@ -138,7 +131,7 @@ h1{
     text-align: center;
     color: #F39422;
     margin: 20px 0 20px 0;
-    font-family: 'Raleway', sans-serif, bold;
+    font-family: 'Raleway', sans-serif;
 }
 
 .pokemones{
@@ -158,13 +151,16 @@ h1{
 }
 
 span{
-    background: green;
-    width: auto;
-    height: 200px;
+    background: #F39422;
+    width: 300px;
+    height: 240px;
+    margin-top: 100px;
+    padding: 10px;
+    border-radius: 10px;
     display: none;
     position: absolute;
     top: 0;
-    right: -100px;
+    right: -140px;
     z-index: 100;
 }
 
@@ -194,14 +190,6 @@ span{
 
 footer{
     height: 50px;
-    /* width: 100%; */
-    /* align-self: flex-end; */
-}
-
-#con{
-    width: 40px;
-    height: 40px;
-    background: red;
 }
 
 
