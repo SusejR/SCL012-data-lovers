@@ -1,27 +1,42 @@
 import POKEMON from './data/pokemon/pokemon.js';
 
 let poke = document.getElementById("pokemones");
-const tipos = document.getElementById ("types");
-console.log(tipos);
-for(let pok of POKEMON){
-  poke.innerHTML += `
-    <div class="cajaPokemon" id="cajaPokemon">      
-    <img class="fotos" src="${pok.img}">
-    <div class="descripcion">
-    <p class="nombres">${pok.name}</p><br>
-    <p> Tipo: ${pok.type}</p>
-    <p> Altura: ${pok.height}</p>
-    <p> Peso: ${pok.weight}</p>
-    </div>
-  `
-  
-  if (tipos === 'Fire') {
-    poke.innerHTML += cajaPokemon.incluides('Fire');
-  };
+const tipos = document.getElementById("types");
 
+tipos.onchange = () => {
+  let filtrados = filterPokemon(POKEMON, tipos.value);
+  clearPokemons();
+ showCards(filtrados);
+ }
+ 
+
+ 
+// Aqui empiezan las funciones
+
+const showCards = (data) => {
+  data.forEach(pok => {
+    poke.innerHTML += `
+      <div class="cajaPokemon" id="cajaPokemon">      
+      <img class="fotos" src="${pok.img}">
+      <div class="descripcion">
+      <p class="nombres">${pok.name}</p><br>
+      <p> Tipo: ${pok.type}</p>
+      <p> Altura: ${pok.height}</p>
+      <p> Peso: ${pok.weight}</p>
+      </div>
+       `
+  });
 }
-tipos.addEventListener('click', function(){
-  if (tipos === 'Fire') {
-    poke.innerHTML += cajaPokemon.incluides('Fire');
-  };
-}) 
+
+const clearPokemons = () => {
+  poke.innerHTML = '';
+}
+
+
+const filterPokemon = (data, type) => {
+  let filtered = data.filter((pokemon) => pokemon.type.includes(type));
+  return filtered;
+}
+
+showCards(POKEMON);
+
