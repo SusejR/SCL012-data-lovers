@@ -4,8 +4,6 @@ let poke = document.getElementById("pokemones");
 const tipos = document.getElementById ("types");
 console.log(tipos);
 for(let pok of POKEMON){
-  
-
   poke.innerHTML += `
     <div class="cajaPokemon" id="cajaPokemon">      
     <img class="fotos" src="${pok.img}">
@@ -20,6 +18,7 @@ for(let pok of POKEMON){
   if (tipos === 'Fire') {
     poke.innerHTML += cajaPokemon.incluides('Fire');
   };
+
 }
 tipos.addEventListener('click', function(){
   if (tipos === 'Fire') {
