@@ -1,19 +1,31 @@
 import POKEMON from './data/pokemon/pokemon.js';
 
 let poke = document.getElementById("pokemones");
-for(let pok of POKEMON){
-  
-  poke.innerHTML += `
-    <div class="cajaPokemon" id="cajaPokemon">      
+
+const tipos = document.getElementById("types");
+
+tipos.onchange = () => {
+  let filtrados = filterPokemon(POKEMON, tipos.value);
+  clearPokemons();
+ showCards(filtrados);
+ }
+ 
+
+ 
+// Aqui empiezan las funciones
+
+const showCards = (data) => {
+  data.forEach(pok => {
+    poke.innerHTML += `
+      <div class="cajaPokemon" id="cajaPokemon">      
       <img class="fotos" src="${pok.img}">
       <div class="descripcion">
       <p class="nombres">${pok.name}</p><br>
-      <p> # ${pok.num}</p>
       <p> Tipo: ${pok.type}</p>
       <p> Altura: ${pok.height}</p>
       <p> Peso: ${pok.weight}</p>
-    
-      <span>
+      
+  <span>
         <p class="nombres"> Características </p><br>
         <p> Caramelos para evolucionar: ${pok.candy_count}</p>
         <p> Huevo: ${pok.egg}</p>
@@ -21,6 +33,21 @@ for(let pok of POKEMON){
         <p> Tiempo de generación: ${pok.spawn_time}</p>
         <p> Debilidades: ${pok.weaknesses}</p>
       </span>
-    </div>
-    `
-} 
+   </div>
+`
+  });
+}
+
+const clearPokemons = () => {
+  poke.innerHTML = '';
+}
+
+
+const filterPokemon = (data, type) => {
+  let filtered = data.filter((pokemon) => pokemon.type.includes(type));
+  return filtered;
+}
+
+showCards(POKEMON);
+
+
