@@ -1,7 +1,8 @@
 import POKEMON from './data/pokemon/pokemon.js';
 
 let poke = document.getElementById("pokemones");
-
+const tipos = document.getElementById ("types");
+console.log(tipos);
 for(let pok of POKEMON){
   
 
@@ -15,12 +16,13 @@ for(let pok of POKEMON){
     <p> Peso: ${pok.weight}</p>
     </div>
   `
+  
+  if (tipos === 'Fire') {
+    poke.innerHTML += cajaPokemon.incluides('Fire');
+  };
 }
-
-
-// const pokemones = document.getElementById('pokemones');
-// for (let i = 0; i < POKEMON.length; i+=1) {
-//     pokemones.innerHTML +=`
-//     <img src="${POKEMON[i].img}">
-//     <p>${POKEMON[i].name}</p>`;
-// }
+tipos.addEventListener('click', function(){
+  if (tipos === 'Fire') {
+    poke.innerHTML += cajaPokemon.incluides('Fire');
+  };
+}) 
