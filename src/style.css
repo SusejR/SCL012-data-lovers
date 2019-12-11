@@ -9,26 +9,33 @@
     background: url(./img/background.png);
     background-size: cover;
     background-repeat: no-repeat;
-    
 }
 
 nav , footer{
     background: #F39422;
     display: flex;
     justify-content: space-between;
-    padding: 0 3%;
+    padding: 0 3%; 
 }
 
 .imgLogo{
     width: 80px;
 }
 
+a.subrayado:link{
+    text-decoration:none;
+    color: black;
+}
+
 .navBotones{
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    flex-wrap: wrap;
 }
 
 nav p, .select{
+    text-decoration:none;
     display: block;
     margin: 15px 15px 15px 30px;
     padding: 5px 0 5px 0;
@@ -36,16 +43,19 @@ nav p, .select{
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
+    color: black;
 }
 
 .selector{
     background: transparent;
     border: none;
-    width: 150px;
+    width: 140px;
     height: 65px;
+    font-weight: bold;
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     color:#000000;
+    cursor: pointer;
 }
 
 .selector:focus{
@@ -60,10 +70,10 @@ nav p, .select{
     transition: all .3s ease;
     font-family: 'Raleway', sans-serif, bold;
 }
-.navBotones div:hover{
+
+.navBotones .amarillo:hover{
     background: #FFCE05;
     cursor: pointer;
-    
 }
 
 .active{
@@ -89,34 +99,33 @@ nav p, .select{
 }
 
 .principal img {  
-    width: 250px;
+    width: 200px;
     height: 200px;
     margin-top: 3%;
-   
 }
 
 .principal div{
     width: 30%;
-    padding: 0% 0% 0% 13%;
+    padding: 0% 0% 0% 1%;
     margin: 8% 0% 0;
     font-size: 1.3em;
     display: flex;
     flex-direction: column;
-    
 }
+
 .texto{
     color:#000000;
-    margin: 0% 0 5% 10%;
+    margin: 0% 0% 2% 5%;
     font-family: 'Montserrat', sans-serif;
 }
 
 .principal div a{
+    text-decoration: none;
     text-align: center;
     width: 150px;
     padding: 10px 20px;
     background:#F39422;
     border-radius: 10px;
-    text-decoration: none;
     color: #ffffff;
     transition: all .2s ease;
     margin: 8% 0 0 10%;
@@ -153,7 +162,7 @@ h1{
 span{
     background: #F39422;
     width: 300px;
-    height: 240px;
+    min-height: 240px;
     margin-top: 100px;
     padding: 10px;
     border-radius: 10px;
@@ -180,7 +189,7 @@ span{
 .nombres{
     font-size: 20px;
     text-align: center;
-    
+    font-weight: bold;
 }
 
 .cajaPokemon p{
@@ -193,8 +202,54 @@ footer{
 }
 
 
-/* @media (max-width: 600px) {
-    .container{
+@media (max-width: 767px) {
+    .back{
         background:none;
     }
+    nav{
+        padding: 0;
+    }
+    .imgLogo{
+        display: none;
+    }
+    .navBotones {
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* width: 100%; */
+        flex-wrap: wrap;
+    }
+    .navBotones div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    } 
+    
+    .imagen{
+        display: none;
+    }
+    nav{
+        display: block;
+    }
+    .selector{
+        width: 100%;
+        text-align: center;
+        text-align-last: center;
+    }
+    /* .selector:focus{
+        text-align: center;
     } */
+    select{
+        text-align:center;
+    }
+    .cajaPokemon{
+        width: 40%;
+        margin-right: 10px;
+    }
+    span{
+        width: 80%;
+        top: 40px;
+        font-size: 14px;
+        left: 30px;
+       
+    }
+}

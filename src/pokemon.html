@@ -12,12 +12,24 @@
 </head>
 
 <body>
-
   <nav>
-    <img src="img/logotipo2solo.svg" class="imgLogo" alt="">
+    <div class="imagen">
+      <a href='index.html'><img src="img/logotipo2solo.svg" class="imgLogo"></a>
+    </div>
     <div class="navBotones">
-      <a href='index.html'><div><p> Inicio</p></div></a>
-      <div class="active"><p> Pokemón</p></div>
+
+      <div class="amarillo">
+        <a class="subrayado" href='index.html'>
+          <p> Inicio</p>
+        </a>
+      </div>
+
+      <div class="active amarillo">
+        <a class="subrayado" href='pokemon.html'>
+          <p> Pokemón</p>
+        </a>
+      </div>
+
       <div id='select'>
         <select name="tiposPokemon" id="types" class="selector">
           <option value="tiposdePokemon">Por tipo</option>
@@ -43,18 +55,13 @@
 
   <div class="container">
     <div class="seccion">
-      <h1>ATRAPALOS YA!!</h1>
+      <h1>ATRÁPALOS YA!</h1>
       <div id='pokemones' class="pokemones">
       </div>
     </div>
   </div>
-
   <footer></footer>
-
-  <div id="root"></div>
   <script type="module" src="main.js"></script>
 </body>
-
-
 
 </html>

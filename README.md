@@ -36,10 +36,10 @@ Una vez realizados los sketchs comenzamos a hacer el prototipo de alta fidelidad
 
 Al realizado este prototipo comenzamos a darnos cuenta que no nos gustaba tanto el diseño y al ver el taller de UX sobre los Principios de Diseño Visual, nos dimos cuenta que podiamos hacerlo más apegado a esos tips que nos dieron ese día, por eso decidimos realizar un nuevo prototipo cambiando los colores, tipografías, fondo, entre otras cosas. 
 
-#Prototipo de Alta fidelidad para dispositivo Móvil.
+# Prototipo de Alta fidelidad para dispositivo Móvil.
 ![celfinal](./src/img/cel.png "celfinal")
 
-#Prototipo de Alta fidelidad para Web.
+# Prototipo de Alta fidelidad para Web.
 En el siguiente Link puede encontrar el prototipo de alta fidelidad con interacción.
 [Prototipo de Alta fidelidad con interacción](https://www.figma.com/proto/JtPAE7bpiwhrdXGC6m95FP/PokeData?node-id=1%3A392&scaling=scale-down)
 
