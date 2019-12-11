@@ -201,16 +201,26 @@ footer{
     height: 50px;
 }
 
-
-@media (max-width: 767px) {
+/* responsive tamaño celular */
+@media (max-width: 667px) {
     .back{
         background:none;
     }
     nav{
         padding: 0;
+        display: block;
     }
     .imgLogo{
         display: none;
+    }
+    .principal div{
+        width: auto;
+    }
+    .principal img{
+        margin-right: 85px;
+    }
+    .principal div a{
+        margin-left: 120px;
     }
     .navBotones {
         /* flex-direction: column; */
@@ -224,12 +234,12 @@ footer{
         justify-content: center;
     } 
     
-    .imagen{
+    /* .imagen{
         display: none;
-    }
-    nav{
+    } */
+    /* nav{
         display: block;
-    }
+    } */
     .selector{
         width: 100%;
         text-align: center;
@@ -241,6 +251,7 @@ footer{
     select{
         text-align:center;
     }
+
     .cajaPokemon{
         width: 40%;
         margin-right: 10px;
@@ -251,5 +262,29 @@ footer{
         font-size: 14px;
         left: 30px;
        
+    }
+}
+
+/* responsive tamaño tablet */
+@media (max-width: 798px) and (min-width:668px){
+    .back{
+        background: none;
+    }
+    .nav{
+        padding: 0;
+        display: block;
+    }
+    .cajaPokemon{
+        /* margin-right: 30px; */
+        margin-right: auto;
+        width: 30%;
+    }
+}
+
+@media (max-width:1160px) and (min-width:799px){
+
+    .cajaPokemon{
+        margin-right: auto;
+        width: 30%; 
     }
 }

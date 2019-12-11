@@ -18,7 +18,7 @@ const showCards = (data) => {
     // console.log(variable.join(" "))
 
     poke.innerHTML += `
-      <div class="cajaPokemon" id="cajaPokemon">      
+      <div class="cajaPokemon" id="cajaPokemon">
         <img class="fotos" src="${pok.img}">
         <div class="descripcion">
         <p class="nombres">${pok.name}</p><br>
@@ -27,14 +27,16 @@ const showCards = (data) => {
         <p> Altura: ${pok.height}</p>
         <p> Peso: ${pok.weight}</p>
       
+        
+
         <span>
-          <p class="nombres">${pok.name}</p><br>
-          <p> Caramelos para evolucionar: ${pok.candy_count ? pok.candy_count : "No Evoluciona"}</p>
-           ${pok.egg == "Not in Eggs"? "" :"<p> Huevo:"+pok.egg+ "</p>"}
-          <p> Posibilidad de aparición: ${pok.spawn_chance}</p>
-          <p> Tiempo de generación: ${pok.spawn_time}</p>
-          <p> Debilidades: ${debilidades.join(", ")}</p>
-        </span>
+        <p class="nombres">${pok.name}</p><br>
+        <p> Caramelos para evolucionar: ${pok.candy_count ? pok.candy_count : "No Evoluciona"}</p>
+         ${pok.egg == "Not in Eggs"? "" :"<p> Huevo:"+pok.egg+ "</p>"}
+        <p> Posibilidad de aparición: ${pok.spawn_chance}</p>
+        <p> Tiempo de generación: ${pok.spawn_time}</p>
+        <p> Debilidades: ${debilidades.join(", ")}</p>
+      </span>
       </div>
       `
   });
