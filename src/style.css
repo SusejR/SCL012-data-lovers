@@ -259,6 +259,11 @@ footer{
         padding: 0;
         display: block;
     }
+    /* .navBotones div{
+        width:100%;
+        display: flex;
+        justify-content: center;
+    } */
     .principal img{
         width: 250px;
         height: 250px;
@@ -272,6 +277,20 @@ footer{
     span{
         width: 100%;
         left: 30px;
+    }
+}
+
+@media (min-width:667px) and (max-width:815px){
+    .navBotones div{
+        width:100%;
+        display: flex;
+        justify-content: center;
+    }
+    .navBotones .amarillo:hover{
+        width: 100%;
+    }
+    .imgLogo{
+        display: none;
     }
 }
 
