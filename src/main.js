@@ -17,7 +17,7 @@ const showCards = (data) => {
         <p> Tipo: ${pok.type}</p>
         <p> Altura: ${pok.height}</p>
         <p> Peso: ${pok.weight}</p>
-
+      
         <span>
           <p class='nombres'>${pok.name}</p><br>
           <p> Caramelos para evolucionar: ${pok.candy_count ? pok.candy_count : 'No Evoluciona'}</p>
