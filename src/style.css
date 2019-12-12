@@ -15,7 +15,7 @@ nav , footer{
     background: #F39422;
     display: flex;
     justify-content: space-between;
-    padding: 0 3%; 
+    padding: 0 3%;
 }
 
 .imgLogo{
@@ -68,7 +68,7 @@ nav p, .select{
     color:#000000;
     font-size: 2em;
     transition: all .3s ease;
-    font-family: 'Raleway', sans-serif, bold;
+    font-family: 'Raleway', sans-serif;
 }
 
 .navBotones .amarillo:hover{
@@ -84,11 +84,6 @@ nav p, .select{
     min-height: 100vh;
     width: 80%;
     margin: auto;
-    /* background-size: cover;
-    background-repeat: no-repeat;
-     */
-     /* display: flex; */
-     /* flex-direction: column; */
 }
 
 .principal{
@@ -98,10 +93,11 @@ nav p, .select{
     flex-wrap: wrap;
 }
 
-.principal img {  
+.principal img {
     width: 200px;
     height: 200px;
     margin-top: 3%;
+    margin-right: 80px;
 }
 
 .principal div{
@@ -156,7 +152,7 @@ h1{
     background: #FFEDA5;
     border-radius: 15px;
     margin-bottom: 20px;
-    position: relative; 
+    position: relative;
 }
 
 span{
@@ -187,7 +183,7 @@ span{
 }
 
 .nombres{
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     font-weight: bold;
 }
@@ -201,7 +197,7 @@ footer{
     height: 50px;
 }
 
-/* responsive tamaño celular */
+/* responsive celular */
 @media (max-width: 667px) {
     .back{
         background:none;
@@ -217,41 +213,31 @@ footer{
         width: auto;
     }
     .principal img{
-        margin-right: 85px;
+        display: flex;
+        justify-content: center;
     }
     .principal div a{
         margin-left: 120px;
     }
-    .navBotones {
-        /* flex-direction: column; */
-        /* align-items: center; */
-        /* width: 100%; */
+    .navBotones{
         flex-wrap: wrap;
     }
     .navBotones div{
         width: 100%;
         display: flex;
         justify-content: center;
-    } 
-    
-    /* .imagen{
-        display: none;
-    } */
-    /* nav{
-        display: block;
-    } */
+    }
     .selector{
         width: 100%;
         text-align: center;
         text-align-last: center;
     }
-    /* .selector:focus{
-        text-align: center;
-    } */
     select{
         text-align:center;
     }
-
+    .nombres{
+        font-size: 15px;
+    }
     .cajaPokemon{
         width: 40%;
         margin-right: 10px;
@@ -261,11 +247,10 @@ footer{
         top: 40px;
         font-size: 14px;
         left: 30px;
-       
     }
 }
 
-/* responsive tamaño tablet */
+/* responsive tablet */
 @media (max-width: 798px) and (min-width:668px){
     .back{
         background: none;
@@ -274,17 +259,49 @@ footer{
         padding: 0;
         display: block;
     }
+    .principal img{
+        width: 250px;
+        height: 250px;
+        margin-top: 15%;
+        margin-right: 70px;
+    }
     .cajaPokemon{
-        /* margin-right: 30px; */
         margin-right: auto;
         width: 30%;
     }
+    span{
+        width: 100%;
+        left: 30px;
+    }
 }
 
-@media (max-width:1160px) and (min-width:799px){
-
+/* responsive pantalla  */
+@media (max-width:1024px) and (min-width:799px){
+    .back{
+        background: none;
+    }
+    .principal img{
+        width: 300px;
+        height: 300px;
+        margin-top: 15%;
+    }
     .cajaPokemon{
         margin-right: auto;
-        width: 30%; 
+        width: 30%;
+    }
+    span{
+        width: 100%;
+        left: 30px;
+    }
+}
+
+@media (min-width:1025px) and (max-width:1200px){
+    .back{
+        background: none;
+    }
+    .principal img{
+        width: 400px;
+        height: 400px;
+        margin-right: 100px;
     }
 }
