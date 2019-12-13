@@ -1,41 +1,52 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-.back{
+.back {
     background: url(./img/background.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-nav , footer{
+nav,
+footer {
     background: #F39422;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0 3%;
 }
 
-.imgLogo{
+.imgLogo {
     width: 80px;
 }
 
-a.subrayado:link{
-    text-decoration:none;
+a.subrayado:link {
+    text-decoration: none;
     color: black;
 }
 
-.navBotones{
+.navBotones {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-weight: bold;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
-nav p, .select{
-    text-decoration:none;
+nav p,
+.select {
+    text-decoration: none;
     display: block;
     margin: 15px 15px 15px 30px;
     padding: 5px 0 5px 0;
@@ -46,7 +57,7 @@ nav p, .select{
     color: black;
 }
 
-.selector{
+.selector {
     background: transparent;
     border: none;
     width: 140px;
@@ -54,42 +65,48 @@ nav p, .select{
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
-    color:#000000;
+    color: #000000;
     cursor: pointer;
 }
 
-.selector:focus{
-    background:#FFCE05;
+.selector:focus {
+    background: #FFCE05;
     border: none;
     outline: green;
 }
 
-.navBotones div{
-    color:#000000;
+.navBotones div {
+    color: #000000;
     font-size: 2em;
+    -webkit-transition: all .3s ease;
     transition: all .3s ease;
     font-family: 'Raleway', sans-serif;
 }
 
-.navBotones .amarillo:hover{
+.navBotones .amarillo:hover {
     background: #FFCE05;
     cursor: pointer;
 }
 
-.active{
-    background:#FFCE05 ;
+.active {
+    background: #FFCE05;
 }
 
-.container{
+.container {
     min-height: 100vh;
     width: 80%;
     margin: auto;
 }
 
-.principal{
+.principal {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     width: 100%;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -100,53 +117,63 @@ nav p, .select{
     margin-right: 80px;
 }
 
-.principal div{
+.principal div {
     width: 30%;
     padding: 0% 0% 0% 1%;
     margin: 8% 0% 0;
     font-size: 1.3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
-.texto{
-    color:#000000;
+.texto {
+    color: #000000;
     margin: 0% 0% 2% 5%;
     font-family: 'Montserrat', sans-serif;
 }
 
-.principal div a{
+.principal div a {
     text-decoration: none;
     text-align: center;
     width: 150px;
     padding: 10px 20px;
-    background:#F39422;
+    background: #F39422;
     border-radius: 10px;
     color: #ffffff;
+    -webkit-transition: all .2s ease;
     transition: all .2s ease;
     margin: 8% 0 0 10%;
     font-family: 'Raleway', sans-serif;
 }
 
-.principal div a:hover{
+.principal div a:hover {
     background: rgb(255, 204, 1);
 }
 
-h1{
+h1 {
     text-align: center;
     color: #F39422;
     margin: 20px 0 20px 0;
     font-family: 'Raleway', sans-serif;
 }
 
-.pokemones{
+.pokemones {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     font-family: 'Montserrat', sans-serif;
 }
 
-.cajaPokemon{
+.cajaPokemon {
     width: 18%;
     height: auto;
     background: #FFEDA5;
@@ -155,7 +182,7 @@ h1{
     position: relative;
 }
 
-span{
+span {
     background: #F39422;
     width: 300px;
     min-height: 240px;
@@ -169,80 +196,106 @@ span{
     z-index: 100;
 }
 
-.cajaPokemon:hover span{
+.cajaPokemon:hover span {
     display: block;
 }
 
-.descripcion{
-    margin: 25px 20px ;
+.descripcion {
+    margin: 25px 20px;
 }
 
-.fotos{
+.fotos {
     display: block;
     margin: auto;
 }
 
-.nombres{
+.nombres {
     font-size: 18px;
     text-align: center;
     font-weight: bold;
 }
 
-.cajaPokemon p{
+.cajaPokemon p {
     text-align: left;
     padding: 3px 0 0 8px;
 }
 
-footer{
+footer {
     height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
+footer p {
+    font-size: 11px;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+}
+
+
 /* responsive celular */
+
 @media (max-width: 667px) {
-    .back{
-        background:none;
+    .back {
+        background: none;
     }
-    nav{
+    nav {
         padding: 0;
         display: block;
     }
-    .imgLogo{
+    .imgLogo {
         display: none;
     }
-    .principal div{
+    .principal div {
         width: auto;
     }
-    .principal img{
+    .principal img {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
-    .principal div a{
+    .principal div a {
         margin-left: 120px;
     }
-    .navBotones{
+    .navBotones {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
-    .navBotones div{
+    .navBotones div {
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
-    .selector{
+    .selector {
         width: 100%;
         text-align: center;
         text-align-last: center;
     }
-    select{
-        text-align:center;
+    select {
+        text-align: center;
     }
-    .nombres{
+    .nombres {
         font-size: 15px;
     }
-    .cajaPokemon{
+    .cajaPokemon {
         width: 40%;
         margin-right: 10px;
     }
-    span{
+    span {
         width: 80%;
         top: 40px;
         font-size: 14px;
@@ -250,75 +303,74 @@ footer{
     }
 }
 
+
 /* responsive tablet */
-@media (max-width: 798px) and (min-width:668px){
-    .back{
+
+@media (min-width:668px) and (max-width: 798px) {
+    .imgLogo {
+        display: none;
+    }
+    .back {
         background: none;
     }
-    .nav{
+    nav {
         padding: 0;
-        display: block;
     }
-    /* .navBotones div{
-        width:100%;
-        display: flex;
-        justify-content: center;
-    } */
-    .principal img{
+    .navBotones {
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        padding: 0;
+    }
+    .principal img {
         width: 250px;
         height: 250px;
         margin-top: 15%;
         margin-right: 70px;
     }
-    .cajaPokemon{
+    .cajaPokemon {
         margin-right: auto;
         width: 30%;
     }
-    span{
+    span {
         width: 100%;
         left: 30px;
     }
 }
 
-@media (min-width:667px) and (max-width:815px){
-    .navBotones div{
-        width:100%;
-        display: flex;
-        justify-content: center;
-    }
-    .navBotones .amarillo:hover{
-        width: 100%;
-    }
-    .imgLogo{
-        display: none;
-    }
-}
 
 /* responsive pantalla  */
-@media (max-width:1024px) and (min-width:799px){
-    .back{
+
+@media (min-width:799px) and (max-width:1024px) {
+    .back {
         background: none;
     }
-    .principal img{
+    .navBotones {
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    }
+    .principal img {
         width: 300px;
         height: 300px;
         margin-top: 15%;
     }
-    .cajaPokemon{
+    .cajaPokemon {
         margin-right: auto;
         width: 30%;
     }
-    span{
+    span {
         width: 100%;
         left: 30px;
     }
 }
 
-@media (min-width:1025px) and (max-width:1200px){
-    .back{
+@media (min-width:1025px) and (max-width:1200px) {
+    .nav {
+        padding: 0;
+    }
+    .back {
         background: none;
     }
-    .principal img{
+    .principal img {
         width: 400px;
         height: 400px;
         margin-right: 100px;
