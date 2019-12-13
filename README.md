@@ -5,7 +5,7 @@ Pokedata es una aplicación donde podrás conocer los pokemón de la región de 
 # DEFINICION DEL PRODUCTO 🔎
 Esta aplicación esta enfocada en usuarios novatos, que no tienen conocimiento sobre el juego Pokemón Go y quieren iniciarse como jugadores. Nuestro objetivo es hacer la adaptación del usuario al juego mucho más fácil y así hacer su experiencia única.
 
-#OBJETIVO DE LOS USUARIOS 💻
+# OBJETIVO DE LOS USUARIOS 💻
 
 - Conocer los Pokemones existentes en la región de Kanto.
 - Conocer y poder clasificar los pokemones por tipos.

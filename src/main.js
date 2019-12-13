@@ -3,6 +3,7 @@ import * as mod from './data.js';
 // Declaro variables
 const poke = document.getElementById('pokemones');
 const tipos = document.getElementById('types');
+const orden = document.getElementById('order');
 
 // Función para mostrar todos los pokemones con su HTML dinamico
 const showCards = (data) => {
@@ -41,4 +42,11 @@ tipos.onchange = () => {
   const filtrados = mod.filterPokemon(POKEMON, tipos.value);
   clearPokemons();
   showCards(filtrados);
+};
+
+// Función para cambiar el valor del select y llamado de la función de ordenar
+orden.onchange = () => {
+  const ordenados = mod.sortData(POKEMON, orden.value);
+  clearPokemons();
+  showCards(ordenados);
 };
