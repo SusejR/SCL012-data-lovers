@@ -30,6 +30,9 @@ Para diseñar nuestro producto, comenzamos realizando sketchs a mano alzada y co
 
 Una vez realizados los sketchs comenzamos a hacer el prototipo de alta fidelidad utilizando la herramienta FIGMA, ahí comenzamos a darle forma a lo que ya habiamos hecho en papel, escogimos los colores, el logo y la imagen de fondo.
 
+Link de testeo de usabilidad del primer prototipo
+[Felipe Rodríguez](https://www.loom.com/share/9ee2c1f6eec049aca5624d91cb2e63dd)
+
 ![protoweb01](./src/img/protoweb01.png "web1")
 ![protoweb02](./src/img/protoweb02.png "web2")
 ![protoweb03](./src/img/protoweb03.png "web3")
@@ -42,6 +45,14 @@ Al realizado este prototipo comenzamos a darnos cuenta que no nos gustaba tanto 
 # Prototipo de Alta fidelidad para Web.
 En el siguiente Link puede encontrar el prototipo de alta fidelidad con interacción.
 [Prototipo de Alta fidelidad con interacción](https://www.figma.com/proto/JtPAE7bpiwhrdXGC6m95FP/PokeData?node-id=1%3A392&scaling=scale-down)
+
+# TESTEO DE USABILIDAD 👨🏼‍💻
+
+En el siguiente link pueden encontrar el testeo con usuario.
+
+[Felipe Rodriguez](https://www.loom.com/share/494cb4e2a6964d85b5dd0b8e415b9665)
+
+[Ignacio Moncada](https://www.loom.com/share/62181135dbe54d09bba2a5f443d15b42)
 
 
 
