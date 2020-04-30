@@ -1,4 +1,4 @@
-![logo](./src/img/logotipo2.svg "logotipo2")
+![logo](./src/img/dataLovers.png "logotio pokeData")
 
 Pokedata es una aplicación donde podrás conocer los pokemón de la región de Kanto, descubrirás cuáles son sus evoluciones, debilidades y más.
 
